@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOGS</title>
+
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <section class="nav-inner">
+
+                <div class="nav-left-logo">
+                    <div class="logo-image">
+                        <img src="assets/logo.png" alt="">
+                    </div>
+                    <div class="logo-title">
+                        <p>Dev<span class="logo-bold">Board</span></p>
+                    </div>
+                </div>
+
+                <div class="nav-right-elements">
+                    <div class="left-count">
+                        <img src="assets/checkbox.png" alt="">
+                        <h1>23</h1>
+                    </div>
+                    <div class="right-button">
+                        <img id="bg-color-change-btn" src="assets/theme-btn.png" alt="">
+                    </div>
+                </div>
+
+            </section>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="body-inner">
+            <h2>Blogs</h2>
+
+            <div class="question-box">
+                <div class="question">
+                    <h4>Question-1: What are the different ways to select an element in the DOM?</h4>
+                </div>
+                <div class="ans">
+                    <p>There are many ways to select elements in the DOM. Such As: 1. getElementsByTagName() 2. getElementsByClassName() 3. getElementById() 4. querySelector() 5. querySelectorAll()</p>
+                </div>
+            </div>
+
+            <div class="question-box">
+                <div class="question">
+                    <h4>Question-2: What is the difference between innerHTML, innerText, and textContent ?</h4>
+                </div>
+                <div class="ans">
+                    <p>By innerHTML we can get the HTML content inside an element. By innerText we get the visible text inside an element without tags. By textContent we get the entire text content inside an element without tag.</p>
+                </div>
+            </div>
+
+            <div class="question-box">
+                <div class="question">
+                    <h4>Question-3: What is event delegation in the DOM?</h4>
+                </div>
+                <div class="ans">
+                    <p>event delegation" is a technique where we can attach a single event listener to a parent element, allowing it to handle events triggered on its child elements, instead of adding separate listeners to each child element.</p>
+                </div>
+            </div>
+
+            <div class="question-box">
+                <div class="question">
+                    <h4>Question-4: What is event bubbling in the DOM?</h4>
+                </div>
+                <div class="ans">
+                    <p>Event Bubbling is when an event starts from the clicked element and moves up through its parent elements.</p>
+                </div>
+            </div>
+
+            <div class="question-box">
+                <div class="question">
+                    <h4>Question-5: How do you create, add, and remove elements using JavaScript?</h4>
+                </div>
+                <div class="ans">
+                    <p>1. For create elements - createElement(), 2. For add elements - appendChild(), prepend() 3. For remove elements - remove(), removeChild()</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
