@@ -74,6 +74,8 @@ nav .right-button img:hover{
     width: 80%;
     margin: 0 auto;
     margin-top: 20px;
+    display: flex;
+    gap: 10px;
 }
 .body-left-area{
     background-color: #fff;
@@ -204,4 +206,39 @@ nav .right-button img:hover{
     font-size: 14px;
     border-radius: 8px;
     cursor: pointer;
+}
+
+/* =========body right==== */
+.body-right-area{
+    background-color: white;
+    border-radius: 16px;
+    text-align: center;
+    padding: 15px;
+}
+.body-right-area-top-tittle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.body-right-area-top-tittle img{
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+.body-right-area-top-tittle h4{
+    font-weight: 500;
+}
+.clear-button button{
+    border: none;
+    padding: 8px 12px;
+    background-color: #3752FD;
+    color: white;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.body-right-area-inner{
+    border-bottom: 2px dashed rgba(55, 82, 253, 0.2);
+    padding-bottom: 16px;
 }
