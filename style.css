@@ -16,7 +16,7 @@ body{
     display: flex;
     justify-content: space-between;
     background-color: white;
-    padding: 18px 24px;
+    padding: 12px 15px;
     border-radius: 16px;
 }
 .nav-left-logo{
@@ -77,19 +77,21 @@ nav .right-button img:hover{
 }
 .body-left-area{
     background-color: #fff;
-    padding: 24px;
+    padding: 15px;
     border-radius: 16px;
 }
 .body-left-area{
-    width: 70%;
+    width: 75%;
 }
 .body-right-area{
-    width: 30%;
+    width: 25%;
 }
 .body-top-items{
     display: flex;
     justify-content: space-between;
     gap: 15px;
+    border-bottom: 2px dashed rgba(55, 82, 253, 0.2);
+    padding-bottom: 20px;
 }
 .body-top-items-left{
     display: flex;
@@ -144,4 +146,62 @@ nav .right-button img:hover{
     padding: 10px;
     border-radius: 50%;
     margin-right: 10px;
+}
+
+.body-bottom-items{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.body-bottom-items-box{
+    background-color: #F4F7FF;
+    padding: 15px;
+    border-radius: 16px;
+}
+.body-bottom-items-box .top-btn{
+    background-color: white;
+    padding: 8px 10px;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.body-bottom-items-box .box-head{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.body-bottom-items-box .text-area{
+    background-color: white;
+    padding: 20px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+.body-bottom-items-box-bottom{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px dashed rgba(55, 82, 253, 0.2);
+    padding-top: 20px;
+    align-items: center;
+}
+.box-date p{
+    color: #00303C;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+.box-date h4{
+    font-weight: 500;
+    font-size: 16px;
+}
+.box-btn button{
+    border: none;
+    padding: 8px 12px;
+    background-color: #3752FD;
+    color: white;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
 }
