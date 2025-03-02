@@ -257,3 +257,6 @@ nav .right-button img:hover{
     margin: 20px 0px;
     border-radius: 8px;
 }
+#current-date{
+    font-weight: 500;
+}
