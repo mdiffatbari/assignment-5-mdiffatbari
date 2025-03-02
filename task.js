@@ -39,7 +39,7 @@ for (let i = 0; i < completeButtons.length; i++) {
 
     let p = document.createElement("p");
     let taskTitle = completeButtons[i].closest(".body-bottom-items-box").querySelector(".box-head").innerText;
-    p.innerText = `'You have completed the task' ${taskTitle} at ${timeNow}`;
+    p.innerText = `You have completed the task ${taskTitle} at ${timeNow}`;
     historyArea.appendChild(p);
 
 
