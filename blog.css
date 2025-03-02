@@ -18,6 +18,7 @@ body{
     background-color: white;
     padding: 12px 15px;
     border-radius: 16px;
+    align-items: center;
 }
 .nav-left-logo{
     display: flex;
@@ -35,38 +36,14 @@ body{
     height: 50px;
     cursor: pointer;
 }
-.nav-right-elements{
-    display: flex;
-    align-items: center;
-}
-.left-count{
-    display: flex;
-}
-.nav-right-elements .left-count{
-    background-color: #F4F7FF;
-    padding: 8px 20px;
-    border-radius: 50px;
-    align-items: center;
-}
-.nav-right-elements .left-count img{
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-}
-.nav-right-elements .left-count h1{
-    font-size: 30px;
-}
-nav .right-button img{
-    margin-left: 30px;
-    width: 60px;
-    height: 60px;
-    background-color: #F4F7FF;
-    padding: 8px;
-    border-radius: 50%;
+.back-btn{
+    border: none;
+    padding: 12px 15px;
+    background-color: #3752FD;
+    color: white;
+    font-size: 14px;
+    border-radius: 8px;
     cursor: pointer;
-}
-nav .right-button img:hover{
-    padding: 10px;
 }
 
 .body-inner{

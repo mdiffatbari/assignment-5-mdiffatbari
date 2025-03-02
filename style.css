@@ -246,3 +246,14 @@ nav .right-button img:hover{
     border-bottom: 2px dashed rgba(55, 82, 253, 0.2);
     padding-bottom: 16px;
 }
+
+#history{
+    text-align: left;
+}
+
+#history p{
+    padding: 15px;
+    background-color: #F4F7FF;
+    margin: 20px 0px;
+    border-radius: 8px;
+}
