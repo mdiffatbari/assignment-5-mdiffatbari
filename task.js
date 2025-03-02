@@ -50,3 +50,8 @@ for (let i = 0; i < completeButtons.length; i++) {
 
   })
 };
+
+const clearButton = document.getElementById("clear-btn");
+clearButton.addEventListener("click", function(){
+  document.getElementById("history").innerHTML = " ";
+})
