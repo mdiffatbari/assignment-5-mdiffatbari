@@ -17,9 +17,11 @@ for (let i = 0; i < completeButtons.length; i++) {
 
     alert("Board Updated Successfully");
 
+/* =============update menu count================== */
     convertedMenuCount++;
     document.getElementById('menu-count').innerText = convertedMenuCount;
 
+/* =============update task count================ */
     convertedTaskCount--;
     document.getElementById('task-count').innerText = convertedTaskCount;
 
@@ -28,20 +30,23 @@ for (let i = 0; i < completeButtons.length; i++) {
     completeButtons[i].style.cursor = "not-allowed";
 
 
+    /* ================update time=============== */
 
-    let now = new Date();
-    let hours = now.getHours() % 12 || 12;
-    let minutes = String(now.getMinutes()).padStart(2, '0');
-    let seconds = String(now.getSeconds()).padStart(2, '0');
-    let amPm = now.getHours() >= 12 ? 'PM' : 'AM';
+    let nowTime = new Date();
+    let hours = nowTime.getHours() % 12 || 12;
+    let minutes = String(nowTime.getMinutes()).padStart(2, '0');
+    let seconds = String(nowTime.getSeconds()).padStart(2, '0');
+    let amOrPm = nowTime.getHours() >= 12 ? 'PM' : 'AM';
 
-    let timeNow = `${hours}:${minutes}:${seconds} ${amPm}`;
+    let updateTime = `${hours}:${minutes}:${seconds} ${amOrPm}`;
 
+    /* ===========activity log=========== */
     let p = document.createElement("p");
     let taskTitle = completeButtons[i].closest(".body-bottom-items-box").querySelector(".box-head").innerText;
-    p.innerText = `You have completed the task ${taskTitle} at ${timeNow}`;
+    p.innerText = `You have completed the task ${taskTitle} at ${updateTime}`;
     historyArea.appendChild(p);
 
+    /* ================alert============== */
 
     clickCount++;
     if (clickCount === completeButtons.length) {
@@ -51,6 +56,7 @@ for (let i = 0; i < completeButtons.length; i++) {
   })
 };
 
+/* =============clear Button================== */
 const clearButton = document.getElementById("clear-btn");
 clearButton.addEventListener("click", function(){
   document.getElementById("history").innerHTML = " ";
