@@ -30,13 +30,12 @@ for (let i = 0; i < completeButtons.length; i++) {
 
 
     let now = new Date();
-    let hours = now.getHours();
-    let minutes = now.getMinutes().toString().padStart(2, '0');
-    let amPm = hours >= 12 ? 'PM' : 'AM';
+    let hours = now.getHours() % 12 || 12;
+    let minutes = String(now.getMinutes()).padStart(2, '0');
+    let seconds = String(now.getSeconds()).padStart(2, '0');
+    let amPm = now.getHours() >= 12 ? 'PM' : 'AM';
 
-    hours = hours % 12 || 12;
-
-    let timeNow = `${hours}:${minutes} ${amPm}`;
+    let timeNow = `${hours}:${minutes}:${seconds} ${amPm}`;
 
     let p = document.createElement("p");
     let taskTitle = completeButtons[i].closest(".body-bottom-items-box").querySelector(".box-head").innerText;
